@@ -3,9 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- redireccionar la pagina en un tiempo determiando -->
+    <!-- <meta http-equiv="refresh" content="5; url=http://cesurformacion.com"> -->
+    <meta name="description" content="">
+    <meta name="author" content="pepe">
     <title>Restaurante</title>
+    <link rel="shortcut icon" href="images/cuchilleria.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    
 </head>
 <body>
     
+    <aside id="offcanvas">
+
+        <h2>Reserva mesa</h2>
+        <form action="" method="">
+            <div class="control">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Pon tu correo" id="email" name="email">
+            </div>
+            <div class="control">
+                <label for="fecha">Fecha</label>
+                <input type="datetime-local" id="fecha" name="fecha">
+            </div>
+            <div class="control">
+                <label for="personas">Personas</label>
+                <input type="number" min="1" max="5" value="1" id="personas" name="personas">
+            </div>
+            <input id="lenguaje" type="hidden" name="lenguaje">
+            <div class="control">
+                <button>Enviar</button>
+            </div>
+        </form>
+        
+        <button class="close">&times;</button>
+
+    </aside>
+
+
+
+    <header id="top">
+        <nav class="menu">
+            <img src="https://picsum.photos/150/40" alt="">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li>
+                    <a href="#">Menús & Carta</a>
+                    <ul class="submenu">
+                        <li><a href="#">Carta</a></li>
+                        <li><a href="#">Menú del dia</a></li>
+                        <li><a href="#">Celebraciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <ul>
+                <li><a id="open-offcanvas" href="#">Reservar</a></li>
+            </ul>
+
+            <ul class="mobile-open-menu">
+                <li>
+                    <a id="open-menu" href="#">Menu</a>
+                    <ul class="submenu">
+                        <li><a href="#">Carta</a></li>
+                        <li><a href="#">Galeria</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <section id="cta">
+        <div class="backdrop"></div>
+        <div class="inner">
+            <h1>Restaurante Viva María</h1>
+            <p>Reserva tu mesa en Viva María y disfruta de la auténtica gastronomía italiana en Málaga</p>
+            <a href="#">Haz tu reserva</a>
+        </div>
+    </section>
+
+
+    <main>
+
+        <section id="presentacion" class="cols boxed">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <div class="inner">
+                <div>
+                    <img src="https://picsum.photos/200" alt="">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum corrupti fugiat, quis repellat vitae dolorem, aliquam facere debitis voluptates odit delectus ut assumenda iure esse obcaecati doloremque dolores nemo temporibus maxime. Ex earum quo dicta, laudantium blanditiis voluptas corporis magnam facere, natus amet error, at animi veritatis est voluptatum? Dolore doloremque perspiciatis animi error nostrum nihil saepe dolorem, suscipit dicta placeat, distinctio eos et iusto totam autem. Corporis quis cupiditate consequatur minus sit, ratione facilis voluptate deserunt consectetur eligendi nobis sequi asperiores debitis obcaecati mollitia ad, similique voluptatibus, incidunt minima quibusdam nulla nihil? Vel id ipsum officia perferendis? Excepturi, itaque?
+                </div>
+                <div>
+                    <img src="https://picsum.photos/200" alt="">
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fuga consequuntur id nostrum sequi delectus, ipsam impedit! Praesentium quas reiciendis alias sapiente laboriosam, repudiandae maiores facere earum dolore excepturi sed aperiam quos tenetur, sint hic porro, in impedit eaque. Dolor dolorum molestiae voluptatem dolores officia, cum obcaecati consequatur ut consequuntur, aliquid officiis ad quam accusantium iure laudantium? Quas, consequuntur quod!
+                </div>
+                <div>
+                    <img src="https://picsum.photos/200" alt="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fuga consequuntur id nostrum sequi delectus, ipsam impedit! Praesentium quas reiciendis alias sapiente laboriosam, repudiandae maiores facere earum dolore excepturi sed aperiam quos tenetur, sint hic porro, in impedit eaque. Dolor dolorum molestiae voluptatem dolores officia, cum obcaecati consequatur ut consequuntur, aliquid officiis ad quam accusantium iure laudantium? Quas, consequuntur quod!
+                </div>
+                <div>
+                    <img src="https://picsum.photos/200" alt="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fuga consequuntur id nostrum sequi delectus, ipsam impedit! Praesentium quas reiciendis alias sapiente laboriosam, repudiandae maiores facere earum dolore excepturi sed aperiam quos tenetur, sint hic porro, in impedit eaque. Dolor dolorum molestiae voluptatem dolores officia, cum obcaecati consequatur ut consequuntur, aliquid officiis ad quam accusantium iure laudantium? Quas, consequuntur quod!
+                </div>
+            </div>
+        </section>
+
+        <section id="banner" class="boxed">
+            <h2>Conoce en detalle nuestro restaurante</h2>
+            <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum corrupti fugiat, quis repellat vitae dolorem, aliquam facere debitis voluptates odit delectus ut assumenda iure esse obcaecati doloremque dolores nemo temporibus maxime. Ex earum quo dicta, laudantium blanditiis voluptas corporis magnam facere, natus amet error, at animi veritatis est voluptatum? Dolore doloremque perspiciatis animi error nostrum nihil saepe dolorem, suscipit dicta placeat, distinctio eos et iusto totam autem. Corporis quis cupiditate consequatur minus sit, ratione facilis voluptate deserunt consectetur eligendi nobis sequi asperiores debitis obcaecati mollitia ad, similique voluptatibus, incidunt minima quibusdam nulla nihil? Vel id ipsum officia perferendis? Excepturi, itaque?
+            </div>
+        </section>
+
+        <section id="video" class="">
+            <video class="background" src="videos/fondo.mp4" autoplay muted loop></video>
+
+            <div class="foreground">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, dignissimos?</h2>
+            </div>
+        </section>
+
+
+        <section id="slide">
+
+            <div class="slide-container">
+                <div class="inner">
+                    <div>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, libero.</h3>
+                    </div>
+                    <div>
+                        <h3>Illo totam unde illum, fugiat beatae facere quis dolores autem.</h3>
+                    </div>
+                    <div>
+                        <h3>Accusamus eaque architecto unde magni, fuga ex placeat natus quidem.</h3>
+                    </div>
+                    <div>
+                        <h3>Praesentium consequuntur numquam vero! Libero cupiditate repellat tempore quis fugiat.</h3>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+    <footer>
+        <div class="inner">
+            <div>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quos deleniti? Itaque libero perspiciatis, cum accusantium totam illum eaque nobis?
+                </p>
+                <p>
+                    <a href="#"><img class="social-icon" src="images/instagram.png" alt=""></a>
+                    <a href="#"><img class="social-icon" src="images/linkedin.png" alt=""></a>
+                    <a href="#"><img class="social-icon" src="images/whatsapp.png" alt=""></a>
+                </p>
+            </div>
+            <div>
+                <h2>Enlaces legales</h2>
+                <ul>
+                    <li><a href="#">Enlace Social 1</a></li>
+                    <li><a href="#">Enlace Social 2</a></li>
+                    <li><a href="#">Enlace Social 3</a></li>
+                    <li><a href="#">Enlace Social 4</a></li>
+                    <li><a href="#">Enlace Social 5</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Acceso a administración</h2>
+                <form action="">
+                    <div class="control">
+                        <label for="user">Usuario</label>
+                        <input id="user" name="usuario" type="text">
+                    </div>
+                    <div class="control">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password">
+                    </div>
+                    <div class="control">
+                        <button>Login</button>    
+                    </div>
+                </form>
+            </div> 
+        </div>
+        <div class="foot">
+            Developed by 2DAW
+        </div>
+    </footer>
+
+
+    <script src="javascripts/front.js"></script>
 </body>
 </html>
